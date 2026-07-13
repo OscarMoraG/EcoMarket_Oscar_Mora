@@ -788,31 +788,39 @@ MAP
 ========================================== */
 
 .map{
-    overflow:hidden;
-    border-radius:24px;
-    box-shadow:var(--shadow-sm);
-}
 
-.map img{
-    width:100%;
-    display:block;
-}
-
-.map{
     margin-top:2rem;
     overflow:hidden;
     border-radius:24px;
     box-shadow:var(--shadow-md);
+
+}
+
+.map a{
+
+    display:block;
+
 }
 
 .map img{
+
     width:100%;
     display:block;
+    cursor:pointer;
+    transition:var(--transition);
+
 }
 
+.map:hover img{
+
+    transform:scale(1.02);
+    opacity:.95;
+
+}
 /* ==========================================
 SECTION HEADERS
 ========================================== */
+
 
 .section-header{
     display:flex;
