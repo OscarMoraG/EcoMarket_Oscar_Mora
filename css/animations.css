@@ -2,13 +2,23 @@
    GLOBAL TRANSITIONS
 ========================================== */
 
-*{
+a,
+button,
+input,
+textarea,
+img,
+.product-card,
+.hero-card,
+.benefit-card,
+.category-btn{
+
     transition:
         background-color .3s ease,
         color .3s ease,
         border-color .3s ease,
         box-shadow .3s ease,
         transform .3s ease;
+
 }
 
 /* ==========================================
@@ -25,9 +35,25 @@
 }
 
 /* ==========================================
-   HEADER
+HEADER
 ========================================== */
+.header{
+    animation:fadeDown .6s ease;
+}
 
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
 .header__link::after{
     content:"";
     display:block;
@@ -44,7 +70,7 @@
 }
 
 /* ==========================================
-   PRODUCT CARD
+PRODUCT CARD
 ========================================== */
 
 .product-card{
@@ -65,7 +91,7 @@
 }
 
 /* ==========================================
-   FAVORITE BUTTON
+FAVORITE BUTTON
 ========================================== */
 
 .product-card__favorite:hover{
@@ -81,7 +107,7 @@
 }
 
 /* ==========================================
-   CATEGORY BUTTON
+CATEGORY BUTTON
 ========================================== */
 
 .category-btn:hover{
@@ -89,7 +115,7 @@
 }
 
 /* ==========================================
-   BENEFITS
+BENEFITS
 ========================================== */
 
 .benefit-card:hover{
@@ -98,9 +124,15 @@
 }
 
 /* ==========================================
-   HERO CARD
+HERO CARD
 ========================================== */
+.hero__image img{
+    transition:.6s;
+}
 
+.hero__image:hover img{
+    transform:scale(1.02);
+}
 .hero-card{
     transition:.35s;
 }

@@ -4,7 +4,7 @@
 <head>
 
     <!-- ==========================================
-         META TAGS
+    META TAGS
     =========================================== -->
 
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
     <title>Products | EcoMarket</title>
 
     <!-- ==========================================
-         GOOGLE FONTS
+        GOOGLE FONTS
     =========================================== -->
 
     <link rel="preconnect"
@@ -34,7 +34,7 @@
         rel="stylesheet">
 
     <!-- ==========================================
-         CSS
+        CSS
     =========================================== -->
 
     <link rel="stylesheet"
@@ -62,12 +62,20 @@
         <div class="container header__container">
 
             <a
-                href="../index.html"
-                class="header__logo">
+    href="../index.html"
+    class="header__logo">
 
-                EcoMarket
+    <img
+        src="../img/logo/logo.svg"
+        alt="EcoMarket Logo">
 
-            </a>
+    <span>
+
+        EcoMarket
+
+    </span>
+
+</a>
 
             <nav
                 class="header__nav"
@@ -185,191 +193,180 @@
         </section>
 
         <!-- ==========================================
-             CATALOG
+     CATALOG
+========================================== -->
+
+<section class="catalog">
+
+    <div class="container catalog__container">
+
+        <!-- ==========================================
+             SIDEBAR FILTERS
         =========================================== -->
 
-        <section class="catalog">
+        <aside class="filters">
 
-                            <!-- ==========================================
-                     SIDEBAR FILTERS
-                =========================================== -->
+            <h2 class="filters__title">
 
-                <aside class="filters">
+                Filters
 
-                    <h2 class="filters__title">
+            </h2>
 
-                        Filters
+            <!-- Categories -->
 
-                    </h2>
+            <div class="filters__group">
 
-                    <!-- Categories -->
+                <h3>Categories</h3>
 
-                    <div class="filters__group">
+                <ul class="filters__list">
 
-                        <h3>Categories</h3>
+                    <li class="filters__item">
 
-                        <ul class="filters__list">
+                        <label>
 
-                            <li class="filters__item">
+                            <input
+                                type="checkbox"
+                                checked>
 
-                                <label>
+                            All Products
 
-                                    <input
-                                        type="checkbox"
-                                        checked>
+                        </label>
 
-                                    All Products
+                    </li>
 
-                                </label>
+                    <li class="filters__item">
 
-                            </li>
+                        <label>
 
-                            <li class="filters__item">
+                            <input type="checkbox">
 
-                                <label>
+                            Home
 
-                                    <input
-                                        type="checkbox">
+                        </label>
 
-                                    Home
+                    </li>
 
-                                </label>
+                    <li class="filters__item">
 
-                            </li>
+                        <label>
 
-                            <li class="filters__item">
+                            <input type="checkbox">
 
-                                <label>
+                            Fashion
 
-                                    <input
-                                        type="checkbox">
+                        </label>
 
-                                    Fashion
+                    </li>
 
-                                </label>
+                    <li class="filters__item">
 
-                            </li>
+                        <label>
 
-                            <li class="filters__item">
+                            <input type="checkbox">
 
-                                <label>
+                            Personal Care
 
-                                    <input
-                                        type="checkbox">
+                        </label>
 
-                                    Personal Care
+                    </li>
 
-                                </label>
+                    <li class="filters__item">
 
-                            </li>
+                        <label>
 
-                            <li class="filters__item">
+                            <input type="checkbox">
 
-                                <label>
+                            Food
 
-                                    <input
-                                        type="checkbox">
+                        </label>
 
-                                    Food
+                    </li>
 
-                                </label>
+                </ul>
 
-                            </li>
+            </div>
 
-                        </ul>
+            <!-- Price -->
 
-                    </div>
+            <div class="filters__group">
 
-                    <!-- Price -->
+                <h3>Price Range</h3>
 
-                    <div class="filters__group">
+                <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="50">
 
-                        <h3>Price Range</h3>
+                <p>$0 — $100</p>
 
-                        <input
-                            type="range"
-                            min="0"
-                            max="100"
-                            value="50">
+            </div>
 
-                        <p>
+            <!-- Availability -->
 
-                            $0 — $100
+            <div class="filters__group">
 
-                        </p>
+                <h3>Availability</h3>
 
-                    </div>
+                <ul class="filters__list">
 
-                    <!-- Availability -->
+                    <li class="filters__item">
 
-                    <div class="filters__group">
+                        <label>
 
-                        <h3>
+                            <input type="checkbox">
 
-                            Availability
+                            In Stock
 
-                        </h3>
+                        </label>
 
-                        <ul class="filters__list">
+                    </li>
 
-                            <li class="filters__item">
+                    <li class="filters__item">
 
-                                <label>
+                        <label>
 
-                                    <input
-                                        type="checkbox">
+                            <input type="checkbox">
 
-                                    In Stock
+                            Out of Stock
 
-                                </label>
+                        </label>
 
-                            </li>
+                    </li>
 
-                            <li class="filters__item">
+                </ul>
 
-                                <label>
+            </div>
 
-                                    <input
-                                        type="checkbox">
+        </aside>
 
-                                    Out of Stock
+        <!-- ==========================================
+             PRODUCTS CONTENT
+        =========================================== -->
 
-                                </label>
+        <div class="catalog__content">
 
-                            </li>
+            <!-- SEARCH BAR -->
 
-                        </ul>
+            <div class="search-bar">
 
-                    </div>
+                <input
+                    type="search"
+                    placeholder="Search eco-friendly products...">
 
-                </aside>
+                <button
+                    class="button button--primary">
 
-                <!-- ==========================================
-                     PRODUCTS CONTENT
-                =========================================== -->
+                    Search
 
-                <div class="catalog__content">
+                </button>
 
-                    <!-- SEARCH BAR -->
+            </div>
 
-                    <div class="search-bar">
+            <!-- PRODUCTS GRID -->
 
-                        <input
-                            type="search"
-                            placeholder="Search eco-friendly products...">
+            <div class="products-grid">
 
-                        <button
-                            class="button button--primary">
-
-                            Search
-
-                        </button>
-
-                    </div>
-
-                    <!-- PRODUCTS GRID -->
-
-                    <div class="products-grid"> <div class="container catalog__container"></div>
                 <!-- ================= PRODUCT 1 ================= -->
 
                     <article class="product-card">
@@ -1524,22 +1521,32 @@
 
             <div class="footer__brand">
 
-                <h2 class="footer__logo">
+    <a
+        href="../index.html"
+        class="header__logo">
 
-                    EcoMarket
+        <img
+            src="../img/logo/logo.svg"
+            alt="EcoMarket Logo">
 
-                </h2>
+        <span>
 
-                <p class="footer__text">
+            EcoMarket
 
-                    Sustainable products designed to help
-                    create a greener future through conscious
-                    shopping and environmentally friendly
-                    alternatives.
+        </span>
 
-                </p>
+    </a>
 
-            </div>
+    <p class="footer__text">
+
+        Sustainable products designed to help
+        create a greener future through conscious
+        shopping and environmentally friendly
+        alternatives.
+
+    </p>
+
+</div>
 
             <!-- COMPANY -->
 

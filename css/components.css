@@ -1,5 +1,5 @@
 /* ==========================================
-   BUTTONS
+BUTTONS
 ========================================== */
 
 .button{
@@ -34,9 +34,27 @@
     background:var(--primary);
     color:var(--white);
 }
+/* ==========================================
+SECTION TITLE
+========================================== */
+
+.section-title{
+    max-width:700px;
+    margin:0 auto 3rem;
+    text-align:center;
+}
+
+.section-title h2{
+    margin-bottom:1rem;
+}
+
+.section-title p{
+    color:var(--gray-500);
+    line-height:1.7;
+}
 
 /* ==========================================
-   HERO
+HERO
 ========================================== */
 
 .hero__tag{
@@ -61,7 +79,7 @@
 }
 
 /* ==========================================
-   HERO CARD
+HERO CARD
 ========================================== */
 
 .hero-card{
@@ -101,7 +119,7 @@
 }
 
 /* ==========================================
-   BENEFITS
+BENEFITS
 ========================================== */
 
 .benefit-card{
@@ -129,7 +147,7 @@
 }
 
 /* ==========================================
-   CATEGORY BUTTONS
+CATEGORY BUTTONS
 ========================================== */
 
 .category-btn{
@@ -152,7 +170,7 @@
 }
 
 /* ==========================================
-   FEATURED
+FEATURED
 ========================================== */
 
 .featured__title{
@@ -165,7 +183,7 @@
 }
 
 /* ==========================================
-   PRODUCT CARD
+PRODUCT CARD
 ========================================== */
 
 .product-card{
@@ -227,7 +245,7 @@
 }
 
 /* ==========================================
-   PRODUCT CARD CONTENT
+PRODUCT CARD CONTENT
 ========================================== */
 
 .product-card__content{
@@ -303,7 +321,7 @@
 }
 
 /* ==========================================
-   NEWSLETTER
+NEWSLETTER
 ========================================== */
 
 .newsletter__content{
@@ -349,7 +367,7 @@
 }
 
 /* ==========================================
-   FOOTER
+FOOTER
 ========================================== */
 
 .footer{
@@ -414,7 +432,154 @@
     font-size:.9rem;
 }
 /* ==========================================
-   CONTACT FORM
+PAGE HEADER
+========================================== */
+
+.page-header{
+
+    padding:3rem 0 2rem;
+    text-align:center;
+    background:linear-gradient(
+        180deg,
+        #F8F8D9 0%,
+        #FFFFFF 100%
+    );
+
+}
+
+.page-header__title{
+    margin-bottom:1rem;
+}
+
+.page-header__description{
+    max-width:700px;
+    margin:auto;
+    color:var(--gray-500);
+}
+/* ==========================================
+CATALOG
+========================================== */
+
+.catalog{
+
+    padding:4rem 0 6rem;
+
+}
+
+.catalog__container{
+
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:3rem;
+    align-items:start;
+
+}
+
+.catalog__content{
+
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+/* ==========================================
+FILTERS
+========================================== */
+
+.filters{
+
+    padding:2rem;
+    background:white;
+    border-radius:24px;
+    box-shadow:var(--shadow-sm);
+    position:sticky;
+    top:120px;
+}
+
+.filters__title{
+    margin-bottom:1.5rem;
+}
+
+.filters__group{
+    margin-bottom:2rem;
+}
+
+.filters__group h3{
+    margin-bottom:1rem;
+}
+
+.filters__list{
+
+    display:flex;
+    flex-direction:column;
+    gap:.8rem;
+}
+
+.filters__item label{
+
+    display:flex;
+    gap:.6rem;
+    cursor:pointer;
+}
+
+/* ==========================================
+SEARCH BAR
+========================================== */
+
+.search-bar{
+
+    display:flex;
+    gap:1rem;
+    background:white;
+    padding:1rem;
+    border-radius:20px;
+    box-shadow:var(--shadow-sm);
+}
+
+.search-bar input{
+
+    flex:1;
+    border:none;
+    outline:none;
+    font-size:1rem;
+    background:transparent;
+}
+
+/* ==========================================
+PAGINATION
+========================================== */
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    gap:.75rem;
+    margin-top:3rem;
+}
+
+.pagination__link{
+    min-width:44px;
+    height:44px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:12px;
+    background:white;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.pagination__link:hover{
+    background:var(--primary);
+    color:white;
+}
+
+.pagination__link--active{
+    background:var(--primary);
+    color:white;
+}
+
+/* =====================================
+CONTACT FORM
 ========================================== */
 
 .contact-form{
@@ -466,7 +631,7 @@
 }
 
 /* ==========================================
-   FILTER SIDEBAR
+FILTER SIDEBAR
 ========================================== */
 
 .filters{
@@ -502,7 +667,7 @@
 }
 
 /* ==========================================
-   SEARCH BAR
+SEARCH BAR
 ========================================== */
 
 .search-bar{
@@ -522,7 +687,7 @@
 }
 
 /* ==========================================
-   PAGINATION
+PAGINATION
 ========================================== */
 
 .pagination{
@@ -551,7 +716,7 @@
 }
 
 /* ==========================================
-   TESTIMONIAL CARD
+TESTIMONIAL CARD
 ========================================== */
 
 .testimonial-card{
@@ -591,7 +756,7 @@
 }
 
 /* ==========================================
-   SOCIAL ICONS
+SOCIAL ICONS
 ========================================== */
 
 .social-icon{
@@ -619,7 +784,7 @@
 }
 
 /* ==========================================
-   MAP
+MAP
 ========================================== */
 
 .map{
@@ -633,8 +798,20 @@
     display:block;
 }
 
+.map{
+    margin-top:2rem;
+    overflow:hidden;
+    border-radius:24px;
+    box-shadow:var(--shadow-md);
+}
+
+.map img{
+    width:100%;
+    display:block;
+}
+
 /* ==========================================
-   SECTION HEADERS
+SECTION HEADERS
 ========================================== */
 
 .section-header{
@@ -655,8 +832,53 @@
     max-width:600px;
 }
 
+.section-title{
+    max-width:700px;
+    margin:0 auto 3rem;
+    text-align:center;
+}
+
+.section-title h2{
+    margin-bottom:1rem;
+
+}
+
+.section-title p{
+    color:var(--gray-500);
+}
+
 /* ==========================================
-   RESPONSIVE COMPONENTS
+SECTION TITLE
+========================================== */
+
+.section-title{
+    max-width:700px;
+    margin:0 auto 3rem;
+    text-align:center;
+}
+
+.section-title h2{
+    margin-bottom:1rem;
+}
+
+.section-title p{
+    color:var(--gray-500);
+    line-height:1.7;
+}
+
+/* ==========================================
+CONTACT CARDS
+========================================== */
+
+.contact__cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1.5rem;
+    margin:2rem 0;
+
+}
+/* ==========================================
+RESPONSIVE COMPONENTS
 ========================================== */
 
 @media(min-width:768px){
@@ -681,5 +903,17 @@
         position:sticky;
         top:110px;
     }
+
+@media(max-width:992px){
+
+    .catalog__container{
+        grid-template-columns:1fr;
+    }
+
+    .filters{
+        position:static;
+    }
+
+}
 
 }
