@@ -1,0 +1,242 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:16px;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#ffffff;
+    color:#1d1d1d;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+button,
+input,
+textarea{
+    border:none;
+    outline:none;
+    font-family:inherit;
+}
+
+button{
+    cursor:pointer;
+    background:none;
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    /* COLORS */
+
+    --primary:#2ECC71;
+    --primary-dark:#27AE60;
+
+    --secondary:#F5F5DC;
+
+    --white:#FFFFFF;
+
+    --black:#1D1D1D;
+
+    --gray-100:#F8F8F8;
+    --gray-200:#ECECEC;
+    --gray-300:#D8D8D8;
+    --gray-500:#777777;
+    --gray-700:#444444;
+
+    /* TYPOGRAPHY */
+
+    --font-title:'DM Serif Display',serif;
+    --font-text:'Inter',sans-serif;
+
+    /* CONTAINER */
+
+    --container:1200px;
+
+    /* SPACING */
+
+    --space-1:0.5rem;
+    --space-2:1rem;
+    --space-3:1.5rem;
+    --space-4:2rem;
+    --space-5:3rem;
+    --space-6:4rem;
+    --space-7:5rem;
+    --space-8:6rem;
+
+    /* RADIUS */
+
+    --radius-sm:8px;
+    --radius-md:12px;
+    --radius-lg:20px;
+    --radius-xl:32px;
+    --radius-round:999px;
+
+    /* SHADOW */
+
+    --shadow-sm:0 4px 10px rgba(0,0,0,.05);
+
+    --shadow-md:0 10px 30px rgba(0,0,0,.08);
+
+    --shadow-lg:0 20px 45px rgba(0,0,0,.12);
+
+    /* TRANSITION */
+
+    --transition:.35s ease;
+
+}
+
+/* ==========================================
+   GLOBAL
+========================================== */
+
+body{
+    min-height:100vh;
+}
+
+.container{
+
+    width:min(90%,var(--container));
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:5rem 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+
+}
+
+.section-title h2{
+
+    font-family:var(--font-title);
+
+    font-size:2.5rem;
+
+    font-weight:400;
+
+    margin-bottom:1rem;
+
+}
+
+.section-title p{
+
+    color:var(--gray-500);
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   BUTTONS BASE
+========================================== */
+
+.button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.7rem;
+
+    padding:1rem 2rem;
+
+    border-radius:var(--radius-round);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.button--primary{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+.button--primary:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ==========================================
+   TITLES
+========================================== */
+
+h1,h2,h3,h4{
+
+    font-family:var(--font-title);
+
+    font-weight:400;
+
+}
+
+/* ==========================================
+   MOBILE FIRST
+========================================== */
+
+@media(min-width:768px){
+
+    .section-title h2{
+
+        font-size:3rem;
+
+    }
+
+}
+
+@media(min-width:1200px){
+
+    .container{
+
+        width:min(92%,1200px);
+
+    }
+
+}

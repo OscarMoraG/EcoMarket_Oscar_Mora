@@ -1,0 +1,369 @@
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.75rem;
+    padding:1rem 2rem;
+    border-radius:999px;
+    font-size:1rem;
+    font-weight:600;
+    transition:all .3s ease;
+}
+
+.button--primary{
+    background:var(--primary);
+    color:var(--white);
+}
+
+.button--primary:hover{
+    background:var(--primary-dark);
+    transform:translateY(-3px);
+}
+
+.button img{
+    width:18px;
+}
+
+/* ==========================================
+   FEATURE CARD
+========================================== */
+
+.feature-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1.5rem;
+
+    border-radius:20px;
+
+    background:var(--white);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.feature-card__icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#EAFBF2;
+
+}
+
+.feature-card__icon img{
+
+    width:28px;
+
+}
+
+.feature-card__title{
+
+    font-size:1.1rem;
+
+    margin-bottom:.4rem;
+
+}
+
+.feature-card__text{
+
+    color:var(--gray-500);
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card{
+
+    background:var(--white);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:all .35s ease;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.product-card__image{
+
+    position:relative;
+
+}
+
+.product-card__image img{
+
+    height:270px;
+
+    object-fit:cover;
+
+}
+
+.product-card__favorite{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--white);
+
+    border-radius:50%;
+
+}
+
+.product-card__favorite img{
+
+    width:20px;
+
+}
+
+.product-card__content{
+
+    padding:1.5rem;
+
+}
+
+.product-card__category{
+
+    color:var(--primary-dark);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:.5rem;
+
+}
+
+.product-card__title{
+
+    font-size:1.35rem;
+
+    margin-bottom:.8rem;
+
+}
+
+.product-card__description{
+
+    color:var(--gray-500);
+
+    margin-bottom:1.2rem;
+
+    font-size:.95rem;
+
+}
+
+.product-card__footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.product-card__price{
+
+    font-size:1.3rem;
+
+    color:var(--primary-dark);
+
+    font-weight:700;
+
+}
+
+.product-card__button{
+
+    padding:.7rem 1.2rem;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.product-card__button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ==========================================
+   CATEGORY CARD
+========================================== */
+
+.category-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:2rem;
+
+    border-radius:24px;
+
+    background:white;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.3s;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.category-card img{
+
+    width:45px;
+
+    margin-bottom:1rem;
+
+}
+
+.category-card h3{
+
+    font-size:1.1rem;
+
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+
+    background:#F7FAF7;
+
+    border-radius:40px;
+
+    padding:4rem;
+
+    text-align:center;
+
+}
+
+.newsletter h2{
+
+    margin-bottom:1rem;
+
+}
+
+.newsletter p{
+
+    color:var(--gray-500);
+
+    margin-bottom:2rem;
+
+}
+
+.newsletter form{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter input{
+
+    width:340px;
+
+    padding:1rem;
+
+    border-radius:999px;
+
+    border:1px solid var(--gray-300);
+
+}
+
+.newsletter button{
+
+    padding:1rem 2rem;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:767px){
+
+    .newsletter{
+
+        padding:2rem;
+
+    }
+
+    .newsletter input{
+
+        width:100%;
+
+    }
+
+}
