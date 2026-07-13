@@ -20,9 +20,17 @@ HEADER
 }
 
 .header__logo{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
     font-family:var(--font-title);
     font-size:2rem;
     color:var(--primary-dark);
+}
+
+.header__logo img{
+    width:48px;
+    height:48px;
 }
 
 .header__nav{
@@ -39,6 +47,12 @@ HEADER
     transition:.3s;
 }
 
+.header__link:hover,
+
+.header__link--active{
+    color:var(--primary-dark);
+}
+
 .header__actions{
     display:flex;
     gap:1rem;
@@ -51,12 +65,20 @@ HEADER
     justify-content:center;
     align-items:center;
     border-radius:50%;
+    transition:var(--transition);
+}
+
+    
+
+.header__icon:hover{
+    background:var(--gray-100);
 }
 
 .header__icon img{
     width:22px;
-}
+    height:22px;
 
+}
 /* ==========================================
 HERO
 ========================================== */
@@ -77,6 +99,16 @@ HERO
     gap:1.5rem;
 }
 
+.hero__title{
+    font-size:3.5rem;
+    line-height:1.1;
+}
+
+.hero__description{
+    max-width:520px;
+    color:var(--gray-500);
+}
+
 .hero__tag{
     width:max-content;
 }
@@ -92,15 +124,47 @@ HERO
 }
 
 .hero__image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
     border-radius:30px;
+
 }
 
 .hero-card{
     position:absolute;
-    bottom:20px;
-    left:20px;
+    left:30px;
+    bottom:30px;
+    width:280px;
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    background:var(--white);
+    padding:1rem;
+    border-radius:20px;
+    box-shadow:var(--shadow-lg);
+
+}
+.hero-card__image{
+    width:70px;
+    height:70px;
+    flex-shrink:0;
+
 }
 
+.hero-card__image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+
+}
+
+.hero-card__content{
+    display:flex;
+    flex-direction:column;
+    gap:.3rem;
+}
 /* ==========================================
 BENEFITS
 ========================================== */
@@ -114,6 +178,27 @@ BENEFITS
     gap:1.5rem;
 }
 
+.benefit-card{
+
+    display:flex;
+    gap:1rem;
+    align-items:flex-start;
+    padding:2rem;
+    border-radius:20px;
+    background:white;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.benefit-card:hover{
+    transform:translateY(-5px);
+}
+
+.benefit-card__icon{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
 /* ==========================================
 CATEGORIES
 ========================================== */
@@ -135,9 +220,66 @@ CATEGORIES
     flex-wrap:wrap;
 }
 
+.category-btn{
+    padding:.8rem 1.5rem;
+    border-radius:999px;
+    border:1px solid var(--gray-300);
+    background:white;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.category-btn:hover{
+    background:var(--primary);
+    color:white;
+}
+
+.category-btn--active{
+    background:var(--primary);
+    color:white;
+}
+
 /* ==========================================
 FEATURED
 ========================================== */
+.product-card{
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow-md);
+    transition:var(--transition);
+}
+
+.product-card__image{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card__footer{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:1rem;
+}
+
+.product-card__button{
+    padding:.6rem 1rem;
+    border-radius:999px;
+    background:var(--primary);
+    color:white;
+    font-size:.9rem;
+    transition:var(--transition);
+}
+
+.product-card__button:hover{
+    background:var(--primary-dark);
+}
 
 .featured{
     padding:5rem 0;
@@ -148,6 +290,20 @@ FEATURED
     justify-content:space-between;
     align-items:center;
     margin-bottom:3rem;
+}
+
+.featured__title{
+    margin:0;
+}
+
+.featured__link{
+    color:var(--primary-dark);
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.featured__link:hover{
+    opacity:.8;
 }
 
 .products-grid{
@@ -177,6 +333,26 @@ NEWSLETTER
     flex-wrap:wrap;
     margin-top:2rem;
 }
+.newsletter__tag{
+    display:inline-block;
+    margin-bottom:1rem;
+}
+
+.newsletter__title{
+    margin-bottom:1rem;
+}
+
+.newsletter__description{
+    margin-bottom:2rem;
+    color:var(--gray-500);
+}
+
+.newsletter__input{
+    padding:1rem 1.5rem;
+    min-width:300px;
+    border:1px solid var(--gray-300);
+    border-radius:50px;
+}
 
 /* ==========================================
 FOOTER
@@ -184,6 +360,7 @@ FOOTER
 
 .footer{
     padding-top:5rem;
+    background:#F8F8D9;
 }
 
 .footer__container{
@@ -203,9 +380,25 @@ FOOTER
     gap:.7rem;
 }
 
-.footer__social{
+.footer__social a{
+    width:44px;
+    height:44px;
     display:flex;
-    gap:1rem;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    border-radius:50%;
+    transition:var(--transition);
+}
+
+.footer__social a:hover{
+    background:var(--primary);
+    transform:translateY(-4px);
+}
+
+.footer__social img{
+    width:20px;
+    height:20px;
 }
 
 .footer__bottom{
@@ -218,6 +411,14 @@ FOOTER
 /* ==========================================
 TABLET
 ========================================== */
+@media(max-width:767px){
+
+    .hero-card{
+        position:static;
+        margin-top:1.5rem;
+        width:100%;
+    }
+}
 
 @media(min-width:768px){
 
