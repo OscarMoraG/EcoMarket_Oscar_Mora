@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+         META TAGS
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="EcoMarket Products">
+
+    <title>Products | EcoMarket</title>
+
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ==========================================
+         CSS
+    =========================================== -->
+
+    <link rel="stylesheet"
+        href="../css/main.css">
+
+    <link rel="stylesheet"
+        href="../css/layout.css">
+
+    <link rel="stylesheet"
+        href="../css/components.css">
+
+    <link rel="stylesheet"
+        href="../css/animations.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="header">
+
+        <div class="container header__container">
+
+            <a
+                href="../index.html"
+                class="header__logo">
+
+                EcoMarket
+
+            </a>
+
+            <nav
+                class="header__nav"
+                aria-label="Main Navigation">
+
+                <ul class="header__menu">
+
+                    <li class="header__item">
+
+                        <a
+                            href="../index.html"
+                            class="header__link">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li class="header__item">
+
+                        <a
+                            href="productos.html"
+                            class="header__link header__link--active">
+
+                            Products
+
+                        </a>
+
+                    </li>
+
+                    <li class="header__item">
+
+                        <a
+                            href="sobre-nosotros.html"
+                            class="header__link">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                    <li class="header__item">
+
+                        <a
+                            href="contacto.html"
+                            class="header__link">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header__actions">
+
+                <a
+                    href="#"
+                    class="header__icon"
+                    aria-label="Search">
+
+                    <img
+                        src="../img/icons/search.svg"
+                        alt="Search">
+
+                </a>
+
+                <a
+                    href="#"
+                    class="header__icon"
+                    aria-label="Shopping Cart">
+
+                    <img
+                        src="../img/icons/shopping-bag.svg"
+                        alt="Shopping Cart">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- ==========================================
+             PAGE HEADER
+        =========================================== -->
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <h1 class="page-header__title">
+
+                    Our Products
+
+                </h1>
+
+                <p class="page-header__description">
+
+                    Discover eco-friendly products carefully selected
+                    to help you live a more sustainable lifestyle.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+             CATALOG
+        =========================================== -->
+
+        <section class="catalog">
+
+                            <!-- ==========================================
+                     SIDEBAR FILTERS
+                =========================================== -->
+
+                <aside class="filters">
+
+                    <h2 class="filters__title">
+
+                        Filters
+
+                    </h2>
+
+                    <!-- Categories -->
+
+                    <div class="filters__group">
+
+                        <h3>Categories</h3>
+
+                        <ul class="filters__list">
+
+                            <li class="filters__item">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox"
+                                        checked>
+
+                                    All Products
+
+                                </label>
+
+                            </li>
+
+                            <li class="filters__item">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox">
+
+                                    Home
+
+                                </label>
+
+                            </li>
+
+                            <li class="filters__item">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox">
+
+                                    Fashion
+
+                                </label>
+
+                            </li>
+
+                            <li class="filters__item">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox">
+
+                                    Personal Care
+
+                                </label>
+
+                            </li>
+
+                            <li class="filters__item">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox">
+
+                                    Food
+
+                                </label>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Price -->
+
+                    <div class="filters__group">
+
+                        <h3>Price Range</h3>
+
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            value="50">
+
+                        <p>
+
+                            $0 — $100
+
+                        </p>
+
+                    </div>
+
+                    <!-- Availability -->
+
+                    <div class="filters__group">
+
+                        <h3>
+
+                            Availability
+
+                        </h3>
+
+                        <ul class="filters__list">
+
+                            <li class="filters__item">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox">
+
+                                    In Stock
+
+                                </label>
+
+                            </li>
+
+                            <li class="filters__item">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox">
+
+                                    Out of Stock
+
+                                </label>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </aside>
+
+                <!-- ==========================================
+                     PRODUCTS CONTENT
+                =========================================== -->
+
+                <div class="catalog__content">
+
+                    <!-- SEARCH BAR -->
+
+                    <div class="search-bar">
+
+                        <input
+                            type="search"
+                            placeholder="Search eco-friendly products...">
+
+                        <button
+                            class="button button--primary">
+
+                            Search
+
+                        </button>
+
+                    </div>
+
+                    <!-- PRODUCTS GRID -->
+
+                    <div class="products-grid"> <div class="container catalog__container"></div>
+                <!-- ================= PRODUCT 1 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            Best Seller
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product1.webp"
+                            alt="Bamboo Toothbrush"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Personal Care
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Bamboo Toothbrush
+                            </h3>
+
+                            <p class="product-card__description">
+                                Eco-friendly bamboo toothbrush with charcoal bristles.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $8.99
+                                </span>
+
+                                <a href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 2 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product2.webp"
+                            alt="Bottle"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Lifestyle
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Glass Bottle
+                            </h3>
+
+                            <p class="product-card__description">
+                                Reusable borosilicate glass bottle with bamboo lid.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $24.90
+                                </span>
+
+                                <a href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 3 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            Organic
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product3.webp"
+                            alt="Soap"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Beauty
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Organic Soap
+                            </h3>
+
+                            <p class="product-card__description">
+                                Handmade soap with essential oils.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $7.50
+                                </span>
+
+                                <a href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 4 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product4.webp"
+                            alt="Cotton Bag"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Fashion
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Cotton Tote Bag
+                            </h3>
+
+                            <p class="product-card__description">
+                                Durable reusable cotton shopping bag.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $15.00
+                                </span>
+
+                                <a href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 5 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product5.webp"
+                            alt="Container"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Kitchen
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Glass Container
+                            </h3>
+
+                            <p class="product-card__description">
+                                Glass food container with bamboo lid.
+                            </p>
+
+                            <span class="product-card__stock product-card__stock--out">
+                                Out of Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $18.90
+                                </span>
+
+                                <a href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                                        <!-- ================= PRODUCT 6 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product6.webp"
+                            alt="Reusable Straw Set"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Kitchen
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Reusable Straw Set
+                            </h3>
+
+                            <p class="product-card__description">
+                                Stainless steel reusable straws with cleaning brush.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $9.99
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 7 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            New
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product7.webp"
+                            alt="Beeswax Wraps"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Kitchen
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Beeswax Food Wraps
+                            </h3>
+
+                            <p class="product-card__description">
+                                Replace plastic wrap with reusable beeswax sheets.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $14.50
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 8 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product8.webp"
+                            alt="Bamboo Cutlery"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Travel
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Bamboo Cutlery Set
+                            </h3>
+
+                            <p class="product-card__description">
+                                Portable bamboo fork, spoon and knife set.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $13.90
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 9 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product9.webp"
+                            alt="Shampoo Bar"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Personal Care
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Shampoo Bar
+                            </h3>
+
+                            <p class="product-card__description">
+                                Plastic-free solid shampoo made with natural oils.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $11.95
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 10 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            Limited
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product10.webp"
+                            alt="Eco Gift Box"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Gift
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Eco Gift Box
+                            </h3>
+
+                            <p class="product-card__description">
+                                Sustainable gift box with eco-friendly essentials.
+                            </p>
+
+                            <span class="product-card__stock product-card__stock--out">
+                                Out of Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $49.99
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                                        <!-- ================= PRODUCT 11 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product11.webp"
+                            alt="Organic Cotton Towels"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Home
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Organic Cotton Towels
+                            </h3>
+
+                            <p class="product-card__description">
+                                Soft organic cotton towels made with sustainable fibers.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $28.90
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 12 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            Eco
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product12.webp"
+                            alt="Laundry Sheets"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Home
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Laundry Sheets
+                            </h3>
+
+                            <p class="product-card__description">
+                                Plastic-free concentrated laundry detergent sheets.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $16.50
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 13 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product13.webp"
+                            alt="Wood Comb"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Personal Care
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Bamboo Hair Comb
+                            </h3>
+
+                            <p class="product-card__description">
+                                Handmade bamboo comb with smooth rounded teeth.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $9.50
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 14 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product14.webp"
+                            alt="Coffee Cup"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Lifestyle
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Reusable Coffee Cup
+                            </h3>
+
+                            <p class="product-card__description">
+                                Double wall reusable cup with bamboo sleeve.
+                            </p>
+
+                            <span class="product-card__stock product-card__stock--out">
+                                Out of Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $19.99
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 15 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            New
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product15.webp"
+                            alt="Eco Notebook"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Office
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Recycled Notebook
+                            </h3>
+
+                            <p class="product-card__description">
+                                Notebook made with 100% recycled paper.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $12.90
+                                </span>
+
+                                <a href="#" class="product-card__button">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                                        <!-- ================= PRODUCT 16 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product16.webp"
+                            alt="Lunch Box"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Kitchen
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Bamboo Lunch Box
+                            </h3>
+
+                            <p class="product-card__description">
+                                Lightweight reusable lunch box made from bamboo fiber.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $21.99
+                                </span>
+
+                                <a
+                                    href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 17 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            Sale
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product17.webp"
+                            alt="Eco Candle"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Home
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Soy Wax Candle
+                            </h3>
+
+                            <p class="product-card__description">
+                                Handmade candle with natural soy wax and lavender aroma.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $14.25
+                                </span>
+
+                                <a
+                                    href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 18 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product18.webp"
+                            alt="Plant Pot"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Garden
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Recycled Plant Pot
+                            </h3>
+
+                            <p class="product-card__description">
+                                Decorative flower pot manufactured from recycled plastic.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $17.40
+                                </span>
+
+                                <a
+                                    href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 19 ================= -->
+
+                    <article class="product-card">
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product19.webp"
+                            alt="Face Cream"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Personal Care
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Natural Face Cream
+                            </h3>
+
+                            <p class="product-card__description">
+                                Moisturizing cream made with organic botanical ingredients.
+                            </p>
+
+                            <span class="product-card__stock product-card__stock--out">
+                                Out of Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $26.90
+                                </span>
+
+                                <a
+                                    href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ================= PRODUCT 20 ================= -->
+
+                    <article class="product-card">
+
+                        <span class="product-card__badge">
+                            Premium
+                        </span>
+
+                        <button class="product-card__favorite">
+
+                            <img
+                                src="../img/icons/heart.svg"
+                                alt="Favorite">
+
+                        </button>
+
+                        <img
+                            src="../img/products/product20.webp"
+                            alt="Eco Starter Kit"
+                            class="product-card__image">
+
+                        <div class="product-card__content">
+
+                            <p class="product-card__category">
+                                Bundle
+                            </p>
+
+                            <h3 class="product-card__title">
+                                Eco Starter Kit
+                            </h3>
+
+                            <p class="product-card__description">
+                                Complete sustainable starter pack with our best eco products.
+                            </p>
+
+                            <span class="product-card__stock">
+                                In Stock
+                            </span>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">
+                                    $59.90
+                                </span>
+
+                                <a
+                                    href="#"
+                                    class="product-card__button">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                                        </div>
+
+                    <!-- ==========================================
+                         PAGINATION
+                    =========================================== -->
+
+                    <nav
+                        class="pagination"
+                        aria-label="Products Pagination">
+
+                        <a
+                            href="#"
+                            class="pagination__link">
+
+                            Previous
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="pagination__link pagination__link--active">
+
+                            1
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="pagination__link">
+
+                            2
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="pagination__link">
+
+                            3
+
+                        </a>
+
+                        <a
+                            href="#"
+                            class="pagination__link">
+
+                            Next
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+        <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer__container">
+
+            <!-- BRAND -->
+
+            <div class="footer__brand">
+
+                <h2 class="footer__logo">
+
+                    EcoMarket
+
+                </h2>
+
+                <p class="footer__text">
+
+                    Sustainable products designed to help
+                    create a greener future through conscious
+                    shopping and environmentally friendly
+                    alternatives.
+
+                </p>
+
+            </div>
+
+            <!-- COMPANY -->
+
+            <div class="footer__column">
+
+                <h3 class="footer__title">
+
+                    Company
+
+                </h3>
+
+                <ul class="footer__list">
+
+                    <li>
+
+                        <a href="../index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="productos.html">
+
+                            Products
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="sobre-nosotros.html">
+
+                            About Us
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="contacto.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- SUPPORT -->
+
+            <div class="footer__column">
+
+                <h3 class="footer__title">
+
+                    Support
+
+                </h3>
+
+                <ul class="footer__list">
+
+                    <li>
+
+                        <a href="#">
+
+                            FAQ
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Shipping
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Returns
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Privacy Policy
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="footer__column">
+
+                <h3 class="footer__title">
+
+                    Contact
+
+                </h3>
+
+                <ul class="footer__list">
+
+                    <li>
+
+                        📧 support@ecomarket.com
+
+                    </li>
+
+                    <li>
+
+                        ☎ +1 (555) 123-4567
+
+                    </li>
+
+                    <li>
+
+                        📍 Green Street 125
+                        <br>
+                        Eco City
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- SOCIAL -->
+
+            <div class="footer__column">
+
+                <h3 class="footer__title">
+
+                    Follow Us
+
+                </h3>
+
+                <div class="footer__social">
+
+                    <a
+                        href="#"
+                        aria-label="Facebook">
+
+                        <img
+                            src="../img/icons/facebook.svg"
+                            alt="Facebook"
+                            loading="lazy">
+
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram">
+
+                        <img
+                            src="../img/icons/instagram.svg"
+                            alt="Instagram"
+                            loading="lazy">
+
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Twitter">
+
+                        <img
+                            src="../img/icons/twitter.svg"
+                            alt="Twitter"
+                            loading="lazy">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer__bottom">
+
+            <div class="container">
+
+                <p>
+
+                    © 2026 EcoMarket. All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

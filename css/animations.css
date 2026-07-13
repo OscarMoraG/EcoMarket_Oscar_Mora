@@ -1,0 +1,174 @@
+/* ==========================================
+   GLOBAL TRANSITIONS
+========================================== */
+
+*{
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        transform .3s ease;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.button:active{
+    transform:scale(.97);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header__link::after{
+    content:"";
+    display:block;
+    width:0;
+    height:2px;
+    margin-top:4px;
+    background:var(--primary);
+    transition:.3s;
+}
+
+.header__link:hover::after,
+.header__link--active::after{
+    width:100%;
+}
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card{
+    transition:.35s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow-lg);
+}
+
+.product-card__image{
+    transition:.4s;
+}
+
+.product-card:hover .product-card__image{
+    transform:scale(1.05);
+}
+
+/* ==========================================
+   FAVORITE BUTTON
+========================================== */
+
+.product-card__favorite:hover{
+    background:var(--primary);
+}
+
+.product-card__favorite:hover img{
+    filter:brightness(0) invert(1);
+}
+
+.product-card__favorite:active{
+    transform:scale(.9);
+}
+
+/* ==========================================
+   CATEGORY BUTTON
+========================================== */
+
+.category-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* ==========================================
+   BENEFITS
+========================================== */
+
+.benefit-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-md);
+}
+
+/* ==========================================
+   HERO CARD
+========================================== */
+
+.hero-card{
+    transition:.35s;
+}
+
+.hero-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.footer__social a:hover,
+.social-icon:hover{
+    transform:scale(1.1);
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter__input:focus{
+    box-shadow:0 0 0 4px rgba(46,204,113,.2);
+}
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+
+.contact-form__input,
+.contact-form__textarea{
+    transition:.3s;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus{
+    transform:translateY(-2px);
+}
+
+/* ==========================================
+   FADE UP
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero__content,
+.benefits,
+.categories,
+.featured,
+.newsletter,
+.footer{
+
+    animation:fadeUp .8s ease;
+
+}
