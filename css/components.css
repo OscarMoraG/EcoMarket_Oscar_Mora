@@ -901,6 +901,49 @@ RESPONSIVE COMPONENTS
 
 }
 
+@media(max-width:992px){
+
+    .catalog__container{
+        grid-template-columns:1fr;
+        gap:2rem;
+    }
+
+    .filters{
+        position:static;
+        width:100%;
+    }
+
+    .search-bar{
+        width:100%;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .catalog{
+        padding:2rem 0 4rem;
+    }
+
+    .filters{
+        padding:1.5rem;
+    }
+
+    .search-bar{
+        flex-direction:column;
+        border-radius:20px;
+    }
+
+    .search-bar input{
+        width:100%;
+    }
+
+    .search-bar .button{
+        width:100%;
+    }
+
+}
+
 @media(min-width:1024px){
 
     .search-bar{
@@ -911,17 +954,5 @@ RESPONSIVE COMPONENTS
         position:sticky;
         top:110px;
     }
-
-@media(max-width:992px){
-
-    .catalog__container{
-        grid-template-columns:1fr;
-    }
-
-    .filters{
-        position:static;
-    }
-
-}
 
 }
