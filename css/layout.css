@@ -474,34 +474,154 @@ FOOTER
     text-align:center;
     border-top:1px solid var(--gray-200);
 }
-
 /* ==========================================
-TABLET
+BLOG HERO
 ========================================== */
-@media(max-width:767px){
 
-    .hero-card{
-        position:static;
-        margin-top:1.5rem;
-        width:100%;
-    }
-    .about__container{
-    grid-template-columns:1fr;
-    }
-
-.about__image{
-    order:-1;
-    }
+.blog-hero{
+    padding:4rem 0 3rem;
 }
 
-@media(min-width:768px){
+.blog-hero .container{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.blog-hero__title{
+    margin-bottom:1.5rem;
+    font-size:clamp(2.5rem,5vw,3.8rem);
+}
+
+.blog-hero__description{
+    max-width:700px;
+    margin:0 auto;
+    color:var(--gray-500);
+    line-height:1.8;
+}
+
+/* ==========================================
+BLOG
+========================================== */
+
+.blog{
+    padding:2rem 0 5rem;
+}
+
+.blog .container{
+    max-width:1100px;
+    margin:0 auto;
+}
+
+/* ==========================================
+ARTICLE
+========================================== */
+
+.article{
+    padding:4rem 0 5rem;
+}
+
+.article .container{
+    max-width:900px;
+    margin:0 auto;
+}
+/* ==========================================
+RESPONSIVE BLOG & ARTICLE
+========================================== */
+
+@media(max-width:992px){
+
+    .blog{
+        padding:2rem 0 4rem;
+    }
+
+    .article{
+        padding:3rem 0 4rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .blog-hero{
+        padding:3rem 0 2rem;
+    }
+
+    .blog-hero__title{
+        font-size:2.4rem;
+    }
+
+    .blog-card{
+        grid-template-columns:1fr;
+        padding:1.5rem;
+    }
+
+    .blog-card__image{
+        height:220px;
+    }
+
+    .article{
+        padding:2.5rem 0 3.5rem;
+    }
+
+    .article__title{
+        font-size:2rem;
+    }
+
+    .article__image{
+        height:300px;
+        margin-bottom:2rem;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .blog{
+        padding:1.5rem 0 3rem;
+    }
+
+    .blog-card{
+        padding:1.25rem;
+    }
+
+    .blog-card__title{
+        font-size:1.5rem;
+    }
+
+    .blog-card__meta{
+        gap:.5rem;
+    }
+
+    .blog-card__image{
+        height:200px;
+    }
+
+    .article__title{
+        font-size:1.75rem;
+    }
+
+    .article__content h2{
+        font-size:1.5rem;
+    }
+
+    .article__image{
+        height:240px;
+    }
+
+}
+/* ==========================================
+RESPONSIVE GENERAL
+========================================== */
+
+@media (min-width:768px){
 
     .header__nav{
         display:block;
     }
 
     .hero__container{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:1fr 1fr;
     }
 
     .benefits__grid{
@@ -513,35 +633,98 @@ TABLET
     }
 
     .footer__container{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+        align-items:start;
     }
 
 }
 
-@media(max-width:992px){
+@media (min-width:992px){
+
+    .products-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .benefits__grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .categories__buttons{
+        flex-wrap:nowrap;
+    }
+
+}
+
+@media (max-width:991px){
+
+    .about__container{
+        grid-template-columns:1fr;
+    }
 
     .contact__container{
         grid-template-columns:1fr;
     }
 
-}
-/* ==========================================
-DESKTOP
-========================================== */
-
-@media(min-width:1024px){
-
-    .benefits__grid{
-    grid-template-columns:repeat(3,320px);
-    justify-content:center;
-}
-
-    .products-grid{
-        grid-template-columns:repeat(3,1fr);
+    .featured__header{
+        flex-direction:column;
+        gap:1rem;
+        align-items:flex-start;
     }
 
-    .footer__container{
-        grid-template-columns:2fr 1fr 1fr 1fr;
+}
+
+@media (max-width:767px){
+
+    .header__container{
+        height:80px;
+    }
+
+    .hero{
+        padding:3rem 0;
+    }
+
+    .hero__title{
+        font-size:2.5rem;
+    }
+
+    .hero-card{
+        position:static;
+        width:100%;
+        margin-top:1.5rem;
+    }
+
+    .categories__header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:1.5rem;
+    }
+
+    .newsletter__form{
+        flex-direction:column;
+    }
+
+    .newsletter__input{
+        min-width:100%;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .header__logo{
+        font-size:1.6rem;
+    }
+
+    .hero__title{
+        font-size:2rem;
+    }
+
+    .button{
+        width:100%;
     }
 
 }
