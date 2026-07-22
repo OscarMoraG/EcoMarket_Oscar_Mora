@@ -31,7 +31,9 @@ EcoMarket is a responsive front-end project developed as part of the **CampusLan
 
 The website simulates a modern online store dedicated to sustainable products, encouraging responsible consumption through a clean, intuitive and responsive interface.
 
-The project follows modern front-end development practices including semantic HTML, reusable CSS components, responsive layouts and the BEM naming convention.
+The project follows modern front-end development practices including semantic HTML, reusable CSS components, responsive layouts and the **BEM naming convention**.
+
+In addition to the product catalog, the website includes a sustainability blog featuring educational articles that promote environmentally responsible habits and conscious living.
 
 ---
 
@@ -54,9 +56,13 @@ https://eco-market-oscar-mora.vercel.app/
 - ✅ Reusable Components
 - ✅ Product Catalog
 - ✅ About Us Page
+- ✅ Sustainability Blog
+- ✅ Individual Article Pages
 - ✅ Contact Form
 - ✅ Testimonials
 - ✅ Smooth Animations
+- ✅ Sticky Header
+- ✅ Consistent Navigation
 - ✅ Modern UI
 - ✅ Mobile Friendly
 
@@ -64,13 +70,13 @@ https://eco-market-oscar-mora.vercel.app/
 
 # 📄 Pages
 
-The website contains four main pages.
-
 | Page | Description |
 |------|-------------|
 | 🏠 Home | Landing page with hero, categories and featured products |
 | 🛍 Products | Product catalog with filters and search |
 | 🌱 About | Company story, mission, values and testimonials |
+| 📰 Blog | Sustainability blog with informative articles |
+| 📄 Articles | Four individual sustainability articles |
 | 📩 Contact | Contact form and company information |
 
 ---
@@ -107,6 +113,26 @@ The website contains four main pages.
 
 ---
 
+## 📰 Blog
+
+<p align="center">
+
+<img src="./assets/blog.png" width="95%">
+
+</p>
+
+---
+
+## 📄 Article
+
+<p align="center">
+
+<img src="./assets/article.png" width="95%">
+
+</p>
+
+---
+
 ## 📩 Contact
 
 <p align="center">
@@ -127,6 +153,8 @@ The website contains four main pages.
 - Google Fonts
 - SVG Icons
 - Responsive Design
+- CSS Animations
+- BEM Methodology
 - Vercel
 
 ---
@@ -135,18 +163,19 @@ The website contains four main pages.
 
 ### Typography
 
-- Playfair Display
-- Poppins
+- DM Serif Display
+- Inter
 
 ### Main Colors
 
 | Color | Hex |
 |-------|------|
-| Primary Green | `#2E7D32` |
-| Light Green | `#A5D6A7` |
-| Background | `#FFFFFF` |
-| Soft Gray | `#F5F5F5` |
-| Text | `#212121` |
+| Primary Green | `#2ECC71` |
+| Primary Dark | `#27AE60` |
+| Secondary | `#F5F5DC` |
+| White | `#FFFFFF` |
+| Gray | `#777777` |
+| Black | `#1D1D1D` |
 
 ---
 
@@ -163,6 +192,7 @@ eco-market/
 │
 ├── img/
 │   ├── about/
+│   ├── blog/
 │   ├── contact/
 │   ├── hero/
 │   ├── icons/
@@ -173,18 +203,45 @@ eco-market/
 ├── views/
 │   ├── productos.html
 │   ├── sobre-nosotros.html
-│   └── contacto.html
+│   ├── blog.html
+│   ├── contacto.html
+│   ├── articulo-reducir-residuos.html
+│   ├── articulo-armario-sostenible.html
+│   ├── articulo-plantas-nativas.html
+│   └── articulo-bano-ecologico.html
 │
 ├── assets/
 │   ├── banner.png
 │   ├── home.png
 │   ├── products.png
 │   ├── about.png
+│   ├── blog.png
+│   ├── article.png
 │   └── contact.png
 │
 ├── index.html
 └── README.md
 ```
+
+---
+
+# 🌿 Website Content
+
+The website includes:
+
+- Home page
+- Product catalog
+- About page
+- Sustainability blog
+- Four educational sustainability articles
+- Contact page
+
+The articles cover topics such as:
+
+- Reducing household waste
+- Building a sustainable wardrobe
+- Benefits of planting native species
+- Creating an eco-friendly bathroom
 
 ---
 
@@ -196,6 +253,8 @@ Optimized for:
 - 📱 Tablet
 - 💻 Laptop
 - 🖥 Desktop
+
+The project follows a **Mobile First** approach to ensure an optimal experience across different screen sizes.
 
 ---
 
@@ -219,6 +278,8 @@ Open the project
 Open index.html in your browser
 ```
 
+Or run the project using **Live Server** in Visual Studio Code.
+
 ---
 
 # 📚 Learning Objectives
@@ -228,9 +289,10 @@ This project allowed me to strengthen my knowledge of:
 - Semantic HTML5
 - CSS Architecture
 - Responsive Design
+- Mobile First
 - CSS Grid
 - Flexbox
-- Components
+- Reusable Components
 - CSS Animations
 - Git
 - GitHub
